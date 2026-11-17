@@ -1,0 +1,45 @@
+{
+  "name": "xefi/faker-php-locales-ro-ro",
+  "type": "library",
+  "description": "Faker extension to include ro_RO locale",
+  "keywords": [
+    "faker",
+    "data",
+    "locale",
+    "ro_RO"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Soenen"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "psr/container": "^2.0",
+    "xefi/faker-php": "^1.5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xefi\\Faker\\RoRo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Xefi\\Faker\\RoRo\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "faker": {
+      "providers": [
+        "Xefi\\Faker\\RoRo\\FakerRoRoServiceProvider"
+      ]
+    }
+  }
+}
